@@ -9,12 +9,6 @@
  */
 class TNS_General_Settings extends TNS_Settings_Class {
 	/**
-	 * Site About Page ID
-	 * @var string
-	 */
-	protected static $site_about_id = 'tns-about-id';
-	
-	/**
 	 * Site Tagline ID
 	 * @var string
 	 */

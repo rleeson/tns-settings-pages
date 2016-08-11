@@ -1,0 +1,109 @@
+/**
+ * Plugin Name: TNS Settings Pages
+ * Plugin URI: N/A
+ * Description: Basic Settings Page Plugin, provides a standard base class to easily combine functionality options
+ * Author: Ryan Leeson
+ * Author URI: http://www.ryanleeson.com
+ * License: GPL v2
+ */
+
+/** Adminsitration Page Styles
+ ******************************/
+input#site-tagline, input#site-title {
+	max-width: 500px;
+}
+
+.setting {
+	margin: 0 0 5px;
+}
+
+.setting input[type="checkbox"] {
+	height: 18px;
+	margin: 1px 5px;
+}
+
+/** Administration Page Section Layout
+ *************************************/
+.tns-settings.wrap > h2 {
+	margin: 0 0 .5em;
+}
+
+.tns-settings.wrap form {
+	background: #fff;
+	border: solid 0.2em #ccc;
+}
+
+.tns-settings.wrap form select, .tns-settings.wrap form input[type="text"],
+	.tns-settings.wrap form input[type="password"], .tns-settings.wrap form input[type="url"]
+	{
+	max-width: 40em;
+	width: 100%;
+}
+
+.tns-settings.wrap form input[type="checkbox"], .tns-settings.wrap form input[type="radio"]
+	{
+	margin: .2em .7em 0 0;
+}
+
+.tns-settings.wrap form select[name~=tns-section-handles] {
+	border: 0 none;
+	line-height: 24px;
+	height: 24px;
+	vertical-align: top;
+}
+
+.tns-settings.wrap form .field-title {
+	font: 600 13px/1.75em "Open Sans", sans-serif;
+	display: table-cell;
+	min-width: 100px;
+	padding: .9em;
+	vertical-align: top;
+	width: 30%;
+}
+
+.tns-settings.wrap form .field-control {
+	display: table-cell;
+	padding: 1em;
+}
+
+.tns-settings.wrap form .field-control>.control {
+	float: left;
+}
+
+.tns-settings.wrap form .field-control .description {
+	display: table-cell;
+}
+
+.tns-settings.wrap form header, .tns-settings.wrap form footer,
+	.tns-settings.wrap form section.tns-section-bodies>div {
+	display: table;
+	width: 100%;
+}
+
+.tns-settings.wrap form header>label, .tns-settings.wrap form footer>label,
+	.tns-settings.wrap form section.tns-section-bodies>div>label {
+	display: table-row;
+}
+
+.tns-settings.wrap form header>.submit, .tns-settings.wrap form footer>.submit,
+	.tns-settings.wrap form section.tns-section-bodies>div>.submit {
+	margin: 0;
+	padding: 1.4em 1em;
+}
+
+.tns-settings.wrap form header, .tns-settings.wrap form footer {
+	background: #ccc;
+}
+
+.tns-settings.wrap form header .field-title, .tns-settings.wrap form footer .field-title
+	{
+	vertical-align: middle;
+}
+
+.tns-settings.wrap form section.tns-section-bodies>div {
+	display: none;
+}
+
+.tns-settings.wrap form section.tns-section-bodies>div.active {
+	display: table;
+}
